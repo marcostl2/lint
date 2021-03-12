@@ -7,6 +7,7 @@ describe("HelloWorld.vue", () => {
     const wrapper = shallowMount(HelloWorld, {
       propsData: { msg }
     });
+    expect(1 + 1).toBe(2);
     expect(wrapper.text()).toMatch(msg);
   });
 });
