@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "gitHooks": {
-      "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "npm test --findRelatedTests --collectCoverage",
-      "git add"
-    ]
+    "pre-commit": "lint-staged"
+                        },
+                        "lint-staged": {
+                          "*.js": [
+                            "eslint --fix",
+                            "vue-cli-service test:unit --findRelatedTests --collectCoverage",
+                            "git add"
+                          ]
   },
   "scripts": {
     "serve": "vue-cli-service serve",
