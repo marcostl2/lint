@@ -9,5 +9,6 @@ describe("HelloWorld.vue", () => {
     });
     expect(wrapper.text()).toMatch(msg);
     expect(wrapper.text()).toMatch(msg+'iaeee');
+    expect(wrapper.text()).toMatch(msg+'ia2222');
   });
 });
