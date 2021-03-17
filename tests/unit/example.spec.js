@@ -10,6 +10,13 @@ describe("HelloWorld.vue", () => {
 
     console.log("iaee");
 
+    // "lint-staged": {
+    //   "*.js": [
+    //     "eslint --fix",
+    //     "npm test"
+    //   ]
+    // },
+
     expect(1 + 1).toBe(2);
     expect(wrapper.text()).toMatch(msg);
   });

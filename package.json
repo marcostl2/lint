@@ -2,16 +2,6 @@
   "name": "lint",
   "version": "0.1.0",
   "private": true,
-  "gitHooks": {
-    "pre-commit": "lint-staged",
-    "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "npm test"
-    ]
-  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -24,6 +14,8 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-unit-jest": "~4.5.0",
