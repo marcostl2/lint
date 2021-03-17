@@ -8,16 +8,8 @@ describe("HelloWorld.vue", () => {
       propsData: { msg }
     });
 
-    console.log("iaee");
-
-    // "lint-staged": {
-    //   "*.js": [
-    //     "eslint --fix",
-    //     "npm test"
-    //   ]
-    // },
-
-    // teste
+    // console.log("iaee");
+    // console.log("iaee");
 
     expect(2 + 1).toBe(3);
     expect(wrapper.text()).toMatch(msg);
