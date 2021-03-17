@@ -8,7 +8,7 @@ describe("HelloWorld.vue", () => {
       propsData: { msg }
     });
 
-    // console.log('iaee');
+    console.log("iaee");
 
     expect(1 + 1).toBe(2);
     expect(wrapper.text()).toMatch(msg);
