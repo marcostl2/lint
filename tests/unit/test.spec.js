@@ -1,5 +1,7 @@
+import a from "./test";
+
 describe("testing", () => {
   it("do something", () => {
-    expect(1 + 1).toBe(2);
+    expect(a).toBeGreaterThan(2);
   });
 });
