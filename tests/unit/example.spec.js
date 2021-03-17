@@ -17,7 +17,9 @@ describe("HelloWorld.vue", () => {
     //   ]
     // },
 
-    expect(1 + 1).toBe(2);
+    // teste
+
+    expect(2 + 1).toBe(3);
     expect(wrapper.text()).toMatch(msg);
   });
 });

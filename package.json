@@ -6,15 +6,22 @@
     "hooks": {
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "prepare-commit-msg": "npx exec < /dev/tty && git cz --hook || true"
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
   },
+  "lint-staged": {
+      "*.js": [
+        "git add",
+        "eslint --fix",
+        "npm test"
+      ]
+    },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test": "vue-cli-service test:unit --config=jest.config.js --findRelatedTests",
     "lint": "vue-cli-service lint",
-    "commit": "git add . && lint-staged && git-cz --no-verify"
+    "cm": "git add . && lint-staged && git-cz"
   },
   "dependencies": {
     "core-js": "^3.6.5",
